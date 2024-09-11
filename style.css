@@ -1,14 +1,20 @@
-/* Configura el body y el contenedor principal */
+/* Configuración del body y el contenedor principal */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
-    margin: 0; /* Elimina el margen predeterminado */
+    min-height: 100vh; /* Altura mínima de la pantalla completa */
+    margin: 0;
+    padding-top: 56px; /* Espacio para la barra de navegación fija */
+    padding-bottom: 56px; /* Espacio para el pie de página fijo */
 }
 
 .contenido-principal {
-    flex: 1; /* Hace que este div ocupe el espacio disponible */
-    padding-bottom: 56px; /* Añade espacio para la barra de navegación fija */
+    flex: 1; /* El contenido principal ocupa todo el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .jumbotron {
@@ -24,7 +30,6 @@ body {
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; /* Suaviza los cambios de tamaño */
 }
 
 #frase {
@@ -59,12 +64,12 @@ body {
     background-color: #D32F2F; /* Rojo más oscuro */
 }
 
-
-/* Estilo de la barra de navegación fija en la parte inferior */
-.navbar.fixed-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030; /* Asegura que esté por encima de otros elementos */
+/* Estilo del footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1030; /* Asegura que el footer esté sobre otros elementos */
+    width: 100%;
 }
