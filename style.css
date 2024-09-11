@@ -1,3 +1,4 @@
+/* Configura el body y el contenedor principal */
 body {
     display: flex;
     flex-direction: column;
@@ -7,10 +8,7 @@ body {
 
 .contenido-principal {
     flex: 1; /* Hace que este div ocupe el espacio disponible */
-}
-
-.navbar {
-    margin-bottom: 20px;
+    padding-bottom: 56px; /* Añade espacio para la barra de navegación fija */
 }
 
 .jumbotron {
@@ -70,4 +68,13 @@ body {
     position: relative; /* Evita que se superponga al contenido */
     bottom: 0;
     width: 100%;
+}
+
+/* Estilo de la barra de navegación fija en la parte inferior */
+.navbar.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Asegura que esté por encima de otros elementos */
 }
