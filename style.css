@@ -1,7 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.contenido-principal {
+    flex: 1; /* Hace que este div ocupe el espacio disponible */
 }
 
 .navbar {
@@ -56,33 +61,13 @@ body {
     background-color: #D32F2F; /* Rojo más oscuro */
 }
 
+/* Estilo del footer */
 .footer {
-    width: 100%;
-    text-align: center;
     background-color: #343a40;
     color: white;
+    text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative; /* Evita que se superponga al contenido */
     bottom: 0;
-}
-
-/* Media Queries para diseño responsivo */
-@media (min-width: 768px) {
-    .jumbotron {
-        width: 70%; /* Aumenta el ancho en pantallas medianas */
-    }
-
-    #frase {
-        font-size: 24px; /* Tamaño de fuente más grande en pantallas medianas */
-    }
-
-    .btn-verdadero, .btn-falso {
-        font-size: 18px; /* Botones más grandes en pantallas medianas */
-    }
-}
-
-@media (min-width: 992px) {
-    .jumbotron {
-        width: 50%; /* Aumenta aún más el ancho en pantallas grandes */
-    }
+    width: 100%;
 }
