@@ -6,6 +6,20 @@ body {
     margin-bottom: 20px;
 }
 
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px; /* Ajusta la altura del jumbotron si es necesario */
+}
+
+#frase {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 .btn-verdadero, .btn-falso {
     padding: 10px 20px;
     font-size: 18px;
