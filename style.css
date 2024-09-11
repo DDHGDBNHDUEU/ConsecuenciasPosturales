@@ -13,6 +13,12 @@ body {
     align-items: center;
     text-align: center;
     height: 300px; /* Ajusta la altura del jumbotron si es necesario */
+    width: 60%; /* Ajusta el ancho del jumbotron (puedes cambiar el valor según sea necesario) */
+    margin: 20px auto; /* Centra el jumbotron horizontalmente y añade margen vertical */
+    padding: 20px; /* Añade un poco de padding para mejorar el espacio interior */
+    background-color: #f8f9fa; /* Color de fondo claro para el jumbotron */
+    border-radius: 8px; /* Bordes redondeados para mejorar el diseño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un poco de profundidad */
 }
 
 #frase {
