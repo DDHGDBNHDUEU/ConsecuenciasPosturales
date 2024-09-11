@@ -59,16 +59,6 @@ body {
     background-color: #D32F2F; /* Rojo más oscuro */
 }
 
-/* Estilo del footer */
-.footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative; /* Evita que se superponga al contenido */
-    bottom: 0;
-    width: 100%;
-}
 
 /* Estilo de la barra de navegación fija en la parte inferior */
 .navbar.fixed-bottom {
