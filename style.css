@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 20px; /* Asegura que haya espacio debajo de la barra de navegación */
 }
 
 .jumbotron {
@@ -73,3 +74,4 @@ body {
     z-index: 1030; /* Asegura que el footer esté sobre otros elementos */
     width: 100%;
 }
+
